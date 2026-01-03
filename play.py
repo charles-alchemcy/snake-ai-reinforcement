@@ -10,7 +10,6 @@ from snakeai.gameplay.environment import Environment
 from snakeai.gui import PyGameGUI
 from snakeai.utils.cli import HelpOnFailArgumentParser
 
-
 def parse_command_line_args(args):
     """ Parse command-line arguments and organize them into a single structured object. """
 
