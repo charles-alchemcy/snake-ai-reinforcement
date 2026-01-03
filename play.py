@@ -21,7 +21,7 @@ def parse_command_line_args(args):
     parser.add_argument(
         '--interface',
         type=str,
-        choices=['cli', 'gui'],
+        choices=['cli', 'gui' , "none"],
         default='gui',
         help='Interface mode (command-line or GUI).',
     )
