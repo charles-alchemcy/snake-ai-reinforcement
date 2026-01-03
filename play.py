@@ -10,7 +10,6 @@ from snakeai.gameplay.environment import Environment
 from snakeai.gui import PyGameGUI
 from snakeai.utils.cli import HelpOnFailArgumentParser
 
-
 def parse_command_line_args(args):
     """ Parse command-line arguments and organize them into a single structured object. """
 
@@ -22,7 +21,7 @@ def parse_command_line_args(args):
     parser.add_argument(
         '--interface',
         type=str,
-        choices=['cli', 'gui'],
+        choices=['cli', 'gui' , "none"],
         default='gui',
         help='Interface mode (command-line or GUI).',
     )
@@ -30,7 +29,7 @@ def parse_command_line_args(args):
         '--agent',
         required=True,
         type=str,
-        choices=['human', 'dqn', 'random'],
+        choices=['human', 'dqn', 'random', 'mct'],
         help='Player agent to use.',
     )
     parser.add_argument(
@@ -47,7 +46,7 @@ def parse_command_line_args(args):
     parser.add_argument(
         '--num-episodes',
         type=int,
-        default=10,
+        default=20,
         help='The number of episodes to run consecutively.',
     )
 
