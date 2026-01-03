@@ -46,7 +46,7 @@ def parse_command_line_args(args):
     parser.add_argument(
         '--num-episodes',
         type=int,
-        default=10,
+        default=20,
         help='The number of episodes to run consecutively.',
     )
 
